@@ -33,6 +33,11 @@ int main() {
         if(resource[i] > min[i] && resource[i] < max[i])
             result.push_back(resource[i]);
     }
+    if(result.empty()) {
+        cout << 0 << endl;
+        cout << endl;
+        return 0;
+    }
     cout << result.size() << endl;
     for(int i = 0; i < result.size()-1; i++) {
       cout << result[i] << " ";
